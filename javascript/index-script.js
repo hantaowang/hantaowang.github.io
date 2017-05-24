@@ -9,19 +9,21 @@ $(document).ready(function(){
       $("body").scrollTop($(this).scrollTop());
   });
 
-  if ($(window).width() < 1100) {
-    $('#contact').css("top", "3400px");
+  var h = $("#project-section").position().top + $('#project-section').outerHeight(true);
+  if (h >= 2700) {
+    $('#contact').css("top", "3300px");
   } else {
     $('#contact').css("top", "2700px");
   }
 
   $( window ).resize(function() {
 
-  if ($(window).width() < 1100) {
-    $('#contact').css("top", "3400px");
-  } else {
-    $('#contact').css("top", "2700px");
-  }})
+    var h = $("#project-section").position().top + $('#project-section').outerHeight(true);
+    if (h >= 2700) {
+      $('#contact').css("top", "3300px");
+    } else {
+      $('#contact').css("top", "2700px");
+    }})
 
   $(".projitem").hover(function(){
     var name = $(this).attr('id')[1];
