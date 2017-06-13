@@ -221,14 +221,14 @@ body{
   border-left: 5px solid orange;
   padding-left: 5px;
   padding-right: 7px;
-  background-size: 200% 100%;
+  background-size: 201% 100%;
   background-image: linear-gradient(to right, transparent 50%, orange 50%);
   transition: .3s;
   color: white;
 }
 
 .href2:hover {
-  background-position: -99.5% 0;
+  background-position: -99.5% 0%;
   color: white;
   text-decoration: none;
 }
