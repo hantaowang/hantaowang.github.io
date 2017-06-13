@@ -1,0 +1,68 @@
+#overlay {
+  background: white;
+  position: fixed;
+  z-index: 10000;
+  height: 90vh;
+  width: 90vw;
+  top: 5vh;
+  right: 5vw;
+  opacity: 0.95;
+  font-family: 'Raleway', sans-serif;
+  overflow-y: auto;
+  display: none;
+}
+
+.specific-overlay {
+  display: none;
+}
+
+.oclose {
+  height: 70px;
+  width: 70px;
+  display: inline-block;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+
+.oclose:hover {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.otitle {
+  text-align: center;
+  font-size: 36pt;
+}
+
+.info-text {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 16pt;
+  text-align: left;
+  color: black;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4);
+}

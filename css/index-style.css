@@ -1,11 +1,16 @@
 
 body{
-  background: #92FE9D;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00d2ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #928DAB, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-repeat: no-repeat;
   background-size: cover;
-  height: 4000px;
+  height: 3000px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
 }
 
 .menufalse{
@@ -17,10 +22,6 @@ body{
   opacity: 0.6;
 }
 
-#about-section{
-  margin-top: 400px;
-}
-
 #about{
   display: inline-block;
   width: 600px;
@@ -29,20 +30,24 @@ body{
   font-size: 18pt;
   letter-spacing: 0.4pt;
   font-family: 'Raleway', sans-serif;
-  margin: 0px 20px;
 }
 
+#top-section{
+  margin-top: 100px;
+}
+
+
 #profile{
+  max-width: 300px;
   border-radius: 50%;
   border: 5px solid white;
   display: inline-block;
-  right: 15%;
-  height: 300px;
+  width: 100%;
   overflow: hidden;
-  margin: 0px 20px;
-  margin-bottom: 30px;
+  margin: 0 auto;
   background: rgba(255,255,204, 0.5);
   user-select: none;
+  margin-bottom: 30px;
 }
 
 #projects{
@@ -62,6 +67,7 @@ body{
   display: inline-block;
   margin: 15px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .proj_img{
@@ -118,6 +124,7 @@ body{
   width: 90%;
   height: 80%;
   transition: 0.35s;
+  line-height: 17pt;
 }
 
 
@@ -207,6 +214,7 @@ body{
 .jobname{
   font-size: 28px;
   margin-bottom: 5px;
+  color: white;
 }
 
 .href2{
@@ -216,10 +224,13 @@ body{
   background-size: 200% 100%;
   background-image: linear-gradient(to right, transparent 50%, orange 50%);
   transition: .3s;
+  color: white;
 }
 
 .href2:hover {
   background-position: -99.5% 0;
+  color: white;
+  text-decoration: none;
 }
 
 
@@ -254,10 +265,10 @@ body{
   font-family: 'Raleway', sans-serif;
   height: 400px;
   width: 700px;
-  position: absolute;
-  top: 2700px;
+  position: relative;
   left: 50%;
   transform: translate(-50%);
+  margin-top: 100px;
   margin-bottom: 0;
 }
 
@@ -291,13 +302,13 @@ body{
   height: 50px;
   width: 500px;
   left: 55px;
-  line-height: 50px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
   text-align: left;
   margin: 20px;
   transition: 0.5s;
   z-index: -1;
+  color: white;
+  font-size: 18pt;
+  line-height: 50px;
 }
 
 .contact-icon{

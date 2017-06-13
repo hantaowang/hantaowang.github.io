@@ -1,11 +1,3 @@
-body{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  overflow: hidden;
-}
-
 ::selection {
   background: rgba(255,255,204, 0.7); /* WebKit/Blink Browsers */
 }
@@ -16,11 +8,16 @@ body{
 a{
   text-decoration: none;
   cursor: pointer;
-  color: inherit;
+}
+
+a:hover{
+  text-decoration: none;
 }
 
 .href:hover{
   background-position: 0% 100%;
+  color: white;
+  text-decoration: none;
 }
 
 .href{
@@ -29,6 +26,7 @@ a{
   background-image: linear-gradient(to bottom, transparent 50%, orange 50%);
   transition: background-position 0.2s;
   padding-top: 5px;
+  color: white;
 }
 
 #wrapper{
@@ -49,10 +47,10 @@ a{
 .section{
   min-height: 50px;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
-#top-section{
+#tion{
   margin-top: 100px;
   margin-bottom: 50px;
 }
