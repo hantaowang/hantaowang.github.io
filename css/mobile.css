@@ -1,0 +1,29 @@
+@media only screen {
+
+  #menubar {
+    display: none;
+  }
+
+  #wrapper {
+    position: absolute;
+    top: 0;
+    height: 4000px;
+    overflow: scroll;
+    height: inherit;
+  }
+
+  #top-section {
+    margin-top: 50px;
+  }
+
+  body {
+    overflow-y: scroll;
+    height: 2000px;
+  }
+
+  body::-webkit-scrollbar {
+      width: 0px;  /* remove scrollbar space */
+      background: transparent;  /* optional: just make scrollbar invisible */
+  }
+
+}

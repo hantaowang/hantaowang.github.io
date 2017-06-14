@@ -10,10 +10,10 @@ $(document).ready(function(){
   //   $(".specific-overlay").fadeOut();
   // });
 
-  $("#menubar").click(function() {
-    $("#overlay").fadeOut();
-    $(".specific-overlay").fadeOut();
-  });
+  // $("#menubar").click(function() {
+  //   $("#overlay").fadeOut();
+  //   $(".specific-overlay").fadeOut();
+  // });
 
   $('a[href*=#]').on('click', function(event){
       event.preventDefault();
