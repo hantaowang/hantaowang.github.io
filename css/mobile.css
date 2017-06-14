@@ -1,29 +1,46 @@
-@media only screen {
+#menubar {
+  display: none;
+}
 
-  #menubar {
-    display: none;
-  }
+#wrapper {
+  position: absolute;
+  top: 0;
+  height: 4000px;
+  overflow: scroll;
+  height: inherit;
+}
 
-  #wrapper {
-    position: absolute;
-    top: 0;
-    height: 4000px;
-    overflow: scroll;
-    height: inherit;
-  }
+#top-section {
+  margin-top: 50px;
+}
 
-  #top-section {
-    margin-top: 50px;
-  }
+body {
+  overflow-y: scroll;
+  height: 2000px;
+}
 
-  body {
-    overflow-y: scroll;
-    height: 2000px;
-  }
+body::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
 
-  body::-webkit-scrollbar {
-      width: 0px;  /* remove scrollbar space */
-      background: transparent;  /* optional: just make scrollbar invisible */
-  }
+.position, .jobdays, .description {
+  font-size: 18pt;
+  line-height: 24pt;
+}
 
+.jobname {
+  font-size: 24pt;
+}
+
+.skill {
+  font-weight: normal;
+}
+
+#subtitle {
+  font-size: 28pt;
+}
+
+.contact-line {
+  font-size: 22pt;
 }

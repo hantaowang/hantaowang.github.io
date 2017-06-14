@@ -14,6 +14,8 @@
   <script>var isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
   if (isMobile) {
     document.write('<link rel="stylesheet" type="text\/css" href="css\/mobile.css">');
+  } else {
+    document.write('<script type="text\/javascript" src="javascript\/desktop.js"><\/script>');
   }
   </script>
 </head>

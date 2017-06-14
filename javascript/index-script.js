@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-  $(".oclose").click(function() {
-    $("#overlay").fadeOut();
-    $(".specific-overlay").fadeOut();
-  });
-
   // $("#wrapper").click(function() {
   //   $("#overlay").fadeOut();
   //   $(".specific-overlay").fadeOut();
@@ -19,25 +14,6 @@ $(document).ready(function(){
       event.preventDefault();
       $("#wrapper").animate({scrollTop:$(this.hash).offset().top}, 500);
   });
-
-  $('#wrapper').on('scroll', function () {
-      $("body").scrollTop($(this).scrollTop());
-  });
-
-  $("#p1").click(function() {
-    $("#overlay").fadeIn();
-    $("#scheme-interp-overlay").fadeIn();
-  });
-
-  $("#p3").click(function() {
-    $("#overlay").fadeIn();
-    $("#database-overlay").fadeIn();
-  });
-
-  // $("#p2").click(function() {
-  //   $("#overlay").show();
-  //   $("#bearmaps-overlay").show();
-  // });
 
   $(".projitem").hover(function(){
     var name = $(this).attr('id')[1];
