@@ -1,8 +1,18 @@
 $(document).ready(function(){
 
   $(".oclose").click(function() {
-    $("#overlay").hide();
-    $(".specific-overlay").hide();
+    $("#overlay").fadeOut();
+    $(".specific-overlay").fadeOut();
+  });
+
+  // $("#wrapper").click(function() {
+  //   $("#overlay").fadeOut();
+  //   $(".specific-overlay").fadeOut();
+  // });
+
+  $("#menubar").click(function() {
+    $("#overlay").fadeOut();
+    $(".specific-overlay").fadeOut();
   });
 
   $('a[href*=#]').on('click', function(event){
@@ -15,14 +25,19 @@ $(document).ready(function(){
   });
 
   $("#p1").click(function() {
-    $("#overlay").show();
-    $("#scheme-interp-overlay").show();
+    $("#overlay").fadeIn();
+    $("#scheme-interp-overlay").fadeIn();
   });
 
   $("#p3").click(function() {
-    $("#overlay").show();
-    $("#database-overlay").show();
+    $("#overlay").fadeIn();
+    $("#database-overlay").fadeIn();
   });
+
+  // $("#p2").click(function() {
+  //   $("#overlay").show();
+  //   $("#bearmaps-overlay").show();
+  // });
 
   $(".projitem").hover(function(){
     var name = $(this).attr('id')[1];
@@ -40,17 +55,17 @@ $(document).ready(function(){
 
   $(document).scroll( function() {
 
-    var value = $("#wrapper").scrollTop() + 200;
+    var value = $("#wrapper").scrollTop();
 
     $(".menuitem").css("background", "transparent");
 
-    if (value <= $('#top-section').position().top + 2 * $('#top-section').outerHeight(true)) {
+    if (value <= $('#about-section').offset().top) {
       $("#menuabout").css("background", "rgba(255, 255, 255, 0.3)");
-    } else if (value <= $('#exp-section').position().top + $('#exp-section').outerHeight(true)) {
+    } else if (value <= $('#exp-section').offset().top) {
       $("#menuprojects").css("background", "rgba(255, 255, 255, 0.3)");
-    } else if (value <= $('#skill-section').position().top + $('#skill-section').outerHeight(true)) {
+    } else if (value <= $('#skill-section').offset().top) {
       $("#menuskills").css("background", "rgba(255, 255, 255, 0.3)");
-    } else if (value <= $('#project-section').position().top + $('#project-section').outerHeight(true) - 100) {
+    } else if (value <= $('#project-section').offset().top) {
       $("#menuexp").css("background", "rgba(255, 255, 255, 0.3)");
     } else {
       $("#menucontact").css("background", "rgba(255, 255, 255, 0.3)");

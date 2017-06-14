@@ -28,55 +28,56 @@
         </div>
       </div>
       <div class="row" style="font-size: 14pt">
-                <div class="col-sm-5 col-xs-8" style="margin-left: 5%; text-align: left">
-        Creates a linked list of integers 1 and 2<br>
-        <code>scm> (cons 1 (cons 2 nil))<br>
-        (1 2)<br><br></code>Creates a lambda function equivalent to <tt>adder = lambda x: lambda y: x + y</tt> in python<br>
-        <code>scm> (define (adder x) (define (add y) (+ x y)) add)<br>
-        adder<br><br>
-        scm> (define add-three (adder 3))<br>
-        add-three<br><br>
-        scm> (add-three 4)<br>
-        7
-                </code><br><br></div>
-                <div class="col-sm-5 col-xs-8" style="margin-left: 5%; text-align: left">
-        Creates a function that recursively finds thte <tt>nth</tt> fibonacci number<br>
-        <code>scm> (define (fib n) (cond ((zero? n) 1) ((= n 1) 1) (else (+ (fib (- n 1)) (fib (- n 2))))))
-        <br>fib</code><br><br><code>scm> (fib 1)<br>1</code><br><br><code>scm> (fib 3)<br>3</code><br><br><code>scm> (fib 10)<br>89</code><br>
+        <div class="col-sm-5 col-xs-8" style="margin-left: 5%; text-align: left">
+          Creates a linked list of integers 1 and 2<br>
+          <code>scm> (cons 1 (cons 2 nil))<br>
+          (1 2)<br><br></code>Creates a lambda function equivalent to <tt>adder = lambda x: lambda y: x + y</tt> in python<br>
+          <code>scm> (define (adder x) (define (add y) (+ x y)) add)<br>
+          adder<br><br>
+          scm> (define add-three (adder 3))<br>
+          add-three<br><br>
+          scm> (add-three 4)<br>
+          7
+        </code><br><br></div>
+        <div class="col-sm-5 col-xs-8" style="margin-left: 5%; text-align: left">
+          Creates a function that recursively finds thte <tt>nth</tt> fibonacci number<br>
+          <code>scm> (define (fib n) (cond ((zero? n) 1) ((= n 1) 1) (else (+ (fib (- n 1)) (fib (- n 2))))))
+          <br>fib</code><br><br><code>scm> (fib 1)<br>1</code><br><br><code>scm> (fib 3)<br>3</code><br><br><code>scm> (fib 10)<br>89</code><br>
         <br></div>
-              </div>
-            </div>
-          <div class="container specific-overlay" id="database-overlay">
-    <div class="row" style="margin-top: 25px">
-      <div class="col-xs-12 col-sm-2 push-sm-10"><img class="oclose" src="images/close.png"></img></div>
-      <div class="col-xs-12 col-sm-10 pull-sm-2 otitle">Database</div>
-    </div>
-    <div class="row" style="margin-top: 25px">
-      <iframe frameborder="0" width="80%" height="500px" src="https://repl.it/Iika?lite=true" style="margin: 0 auto;"></iframe>
-      <div class="col-11 info-text">
-        Database was a partner project from CS61B: Data Structures, completed in Spring 2016. To begin, simply hit the <span><img src="images/run.png"></img></span> button.
-        While it does not include all the features of the language, it supports the most commonly used ones and even tail recursion.<br><br>Examples of Inputs:<br>
       </div>
     </div>
-    <div class="row" style="font-size: 14pt">
-              <div class="col-sm-5 col-xs-8" style="margin-left: 5%; text-align: left">
-      Creates a linked list of integers 1 and 2<br>
-      <code>scm> (cons 1 (cons 2 nil))<br>
-      (1 2)<br><br></code>Creates a lambda function equivalent to <tt>adder = lambda x: lambda y: x + y</tt> in python<br>
-      <code>scm> (define (adder x) (define (add y) (+ x y)) add)<br>
-      adder<br><br>
-      scm> (define add-three (adder 3))<br>
-      add-three<br><br>
-      scm> (add-three 4)<br>
-      7
-              </code><br><br></div>
-              <div class="col-sm-5 col-xs-8" style="margin-left: 5%; text-align: left">
-      Creates a function that recursively finds thte <tt>nth</tt> fibonacci number<br>
-      <code>scm> (define (fib n) (cond ((zero? n) 1) ((= n 1) 1) (else (+ (fib (- n 1)) (fib (- n 2))))))
-      <br>fib</code><br><br><code>scm> (fib 1)<br>1</code><br><br><code>scm> (fib 3)<br>3</code><br><br><code>scm> (fib 10)<br>89</code>
+    <div class="container specific-overlay" id="database-overlay">
+      <div class="row" style="margin-top: 25px">
+        <div class="col-xs-12 col-sm-2 push-sm-10"><img class="oclose" src="images/close.png"></img></div>
+        <div class="col-xs-12 col-sm-10 pull-sm-2 otitle">Database</div>
       </div>
-            </div>
-          </div>
+      <div class="row" style="margin-top: 25px">
+        <iframe frameborder="0" width="80%" height="500px" src="https://repl.it/IkGU?lite=true" style="margin: 0 auto;"></iframe>
+        <div class="col-11 info-text">
+          Database was a partner project from CS61B: Data Structures, completed in Spring 2016. To begin, simply hit the <span><img src="images/run.png"></img></span> button.
+          This is a SQL like database and has many of the features that SQLL provides. The full documentation can be found at
+          <a href="http://datastructur.es/sp17/materials/proj/proj2/proj2.html">here</a>. Below are some sample inputs for quick reference.
+          <br><br>Examples of Inputs:<br>
+        </div>
+      </div>
+      <div class="row" style="font-size: 14pt">
+        <div class="col-sm-5 col-xs-8" style="margin-left: 5%; text-align: left">
+          Imports some predefined table<code><br>> load t1<br>
+          > load t2<br><br></code>Creates a lambda function equivalent to <tt>adder = lambda x: lambda y: x + y</tt> in python<br>
+          <code>scm> (define (adder x) (define (add y) (+ x y)) add)<br>
+          adder<br><br>
+          scm> (define add-three (adder 3))<br>
+          add-three<br><br>
+          scm> (add-three 4)<br>
+          7
+        </code><br><br></div>
+        <div class="col-sm-5 col-xs-8" style="margin-left: 5%; text-align: left">
+          Creates a function that recursively finds thte <tt>nth</tt> fibonacci number<br>
+          <code>scm> (define (fib n) (cond ((zero? n) 1) ((= n 1) 1) (else (+ (fib (- n 1)) (fib (- n 2))))))
+          <br>fib</code><br><br><code>scm> (fib 1)<br>1</code><br><br><code>scm> (fib 3)<br>3</code><br><br><code>scm> (fib 10)<br>89</code>
+        </div>
+      </div>
+    </div>
   </div>
   <div id="menubar">
     <a href="#top-section"><div class="menuitem" id="menuabout">ABOUT</div></a>
@@ -92,7 +93,7 @@
         <div id="name">Will Wang</div>
         <div id="subtitle"><span class="highlight">Developer</span> | <span class="highlight">Researcher</span> | <span class="highlight">Engineer</span></div>
       </div>
-      <div class="section">
+      <div class="section" id="about-section">
           <div class="row" style="width: 80%; margin: 0 auto; margin-bottom: 90px;">
           <div style="margin: 0 auto;" class="col-md-12 col-lg-4"><img src="images/will.png" id="profile"></div>
           <div style="margin: 0 auto;" id="about" class="col-md-12 col-lg-8 col-md-offset-1">
@@ -109,24 +110,34 @@
         <div class="sub-title" style="width: 400px">Experience</div>
         <div id="jobs">
           <div class="job">
-            <div class="job-info">
-            <div class="jobname"><a href="https://netsys.cs.berkeley.edu" class="href2">Netsys Laboratory</a></div>
-            <div class="position">Research Assistant</div>
-            <div class="jobdays">April 2017 - Present</div>
+            <div class="row">
+              <div class="col-8">
+                <div class="jobname"><a href="https://netsys.cs.berkeley.edu" class="href2">Netsys Laboratory</a></div>
+                <div class="position">Research Assistant</div>
+                <div class="jobdays">April 2017 - Present</div>
+              </div>
+              <div class="col-4">
+                <img src="images/netsys.png" class="job-img"></img>
+              </div>
+            </div>
             <div class="description">Working on software to identify resource utilization bottlenecks in distributed, containerized services but throttling individual conatiner resources
               on services using Docker, Spark, and Nginx.
-            </div></div>
-            <img src="images/netsys.png" class="job-img">
+            </div>
           </div>
           <div class="job">
-            <div class="job-info">
-            <div class="jobname"><a href="http://www.gulfstream.com/" class="href2">Gulfstream Aerospace</a></div>
-            <div class="position">High School Apprentice</div>
-            <div class="jobdays">August 2015 - June 2016</div>
+            <div class="row">
+              <div class="col-8">
+                <div class="jobname"><a href="http://www.gulfstream.com/" class="href2">Gulfstream Aerospace</a></div>
+                <div class="position">High School Apprentice</div>
+                <div class="jobdays">August 2015 - June 2016</div>
+              </div>
+              <div class="col-4">
+                <img src="images/gulfstream.png" class="job-img"></img>
+              </div>
+            </div>
             <div class="description">Assisted mechanical engineering teams in drafting, drawing, and checking of interior competions designs of Gulfstream G550 and G650 aircrafts.
               Daily responsibilities included extensive use of AutoCAD, CATIA, and Excel.
-            </div></div>
-            <img src="images/gulfstream.png" class="job-img">
+            </div>
           </div>
 
       </div></div>
@@ -184,7 +195,7 @@
           </div>
           <img src="images/scheme.png" class="proj_img" id="i1">
         </div>
-        <a href="http://9ba7eb60.ngrok.io" target="_blank">
+        <a href="http://5e9a0d73.ngrok.io/map.html" target="_blank">
         <div class="projitem" id="p2">
           <div class="overlay" id="o2">
             <div class="overlay-title">BearMaps</div>
@@ -236,7 +247,7 @@
         <div class="contact-line"><img src="images/mail.png" class="contact-icon"></img><a href="mailto:hwang97@berkeley.edu" style="color: white">hwang97@berkeley.edu</a></div>
         <div class="contact-line"><img src="images/github.png" class="contact-icon"></img><a href="https://github.com/hantaowang" target="_blank" style="color: white">github.io/hantaowang</a></div>
         <div class="contact-line"><img src="images/linked.png" class="contact-icon"></img><a href="https://linkedin.com/in/hwang97" target="_blank" style="color: white">linkedin.com/in/hwang97</a></div>
-        <div class="contact-line"><img src="images/pdf.png" class="contact-icon"></img><a href="/files/resume.pdf" target="_blank" style="color: white">/resume.pdf</a></div>
+        <div class="contact-line"><img src="images/pdf.png" class="contact-icon"></img><a href="files/resume.pdf" target="_blank" style="color: white">/resume.pdf</a></div>
       </div>
     </div>
 
