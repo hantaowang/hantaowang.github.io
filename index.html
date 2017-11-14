@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" href="css/shared.css">
   <link rel="stylesheet" type="text/css" href="css/overlay.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700|Source+Sans+Pro:200,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700" rel="stylesheet">
   <link rel="shortcut icon" href="images/icon.png">
   <script src="javascript/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="javascript/index-script.js"></script>
@@ -21,71 +21,6 @@
 </head>
 
 <body>
-  <div id="overlay">
-    <div class="container specific-overlay" id="scheme-interp-overlay">
-      <div class="row" style="margin-top: 25px">
-        <div class="col-xs-12 col-sm-2 push-sm-10"><img  class="oclose" src="images/close.png"></img></div>
-        <div class="col-xs-12 col-sm-10 pull-sm-2 otitle">Scheme Interpreter</div>
-      </div>
-      <div class="row" style="margin-top: 25px">
-        <iframe frameborder="0" width="80%" height="500px" src="https://repl.it/Iika?lite=true" style="margin: 0 auto;"></iframe>
-        <div class="col-11 info-text">
-          The Scheme Interpreter was a partner project from CS61A: The Structure and Interpretation of Computer Programs, completed in Fall 2016. To begin, simply hit the <span><img src="images/run.png"></img></span> button.
-          While it does not include all the features of the language, it supports the most commonly used ones and even tail recursion.<br><br>Examples of Inputs:<br>
-        </div>
-      </div>
-      <div class="row" style="font-size: 14pt">
-        <div class="col-sm-5 col-xs-8" style="margin-left: 5%; text-align: left">
-          Creates a linked list of integers 1 and 2<br>
-          <code>scm> (cons 1 (cons 2 nil))<br>
-          (1 2)<br><br></code>Creates a lambda function equivalent to <tt>adder = lambda x: lambda y: x + y</tt> in python<br>
-          <code>scm> (define (adder x) (define (add y) (+ x y)) add)<br>
-          adder<br><br>
-          scm> (define add-three (adder 3))<br>
-          add-three<br><br>
-          scm> (add-three 4)<br>
-          7
-        </code><br><br></div>
-        <div class="col-sm-5 col-xs-8" style="margin-left: 5%; text-align: left">
-          Creates a function that recursively finds thte <tt>nth</tt> fibonacci number<br>
-          <code>scm> (define (fib n) (cond ((zero? n) 1) ((= n 1) 1) (else (+ (fib (- n 1)) (fib (- n 2))))))
-          <br>fib</code><br><br><code>scm> (fib 1)<br>1</code><br><br><code>scm> (fib 3)<br>3</code><br><br><code>scm> (fib 10)<br>89</code><br>
-        <br></div>
-      </div>
-    </div>
-    <div class="container specific-overlay" id="database-overlay">
-      <div class="row" style="margin-top: 25px">
-        <div class="col-xs-12 col-sm-2 push-sm-10"><img class="oclose" src="images/close.png"></img></div>
-        <div class="col-xs-12 col-sm-10 pull-sm-2 otitle">Database</div>
-      </div>
-      <div class="row" style="margin-top: 25px">
-        <iframe frameborder="0" width="80%" height="500px" src="https://repl.it/IkGU?lite=true" style="margin: 0 auto;"></iframe>
-        <div class="col-11 info-text">
-          Database was a partner project from CS61B: Data Structures, completed in Spring 2016. To begin, simply hit the <span><img src="images/run.png"></img></span> button.
-          This is a SQL like database and has many of the features that SQLL provides. The full documentation can be found at
-          <a href="http://datastructur.es/sp17/materials/proj/proj2/proj2.html">here</a>. Below are some sample inputs for quick reference.
-          <br><br>Examples of Inputs:<br>
-        </div>
-      </div>
-      <div class="row" style="font-size: 14pt">
-        <div class="col-sm-5 col-xs-8" style="margin-left: 5%; text-align: left">
-          Imports some predefined table<code><br>> load t1<br>
-          > load t2<br><br></code>Creates a lambda function equivalent to <tt>adder = lambda x: lambda y: x + y</tt> in python<br>
-          <code>scm> (define (adder x) (define (add y) (+ x y)) add)<br>
-          adder<br><br>
-          scm> (define add-three (adder 3))<br>
-          add-three<br><br>
-          scm> (add-three 4)<br>
-          7
-        </code><br><br></div>
-        <div class="col-sm-5 col-xs-8" style="margin-left: 5%; text-align: left">
-          Creates a function that recursively finds thte <tt>nth</tt> fibonacci number<br>
-          <code>scm> (define (fib n) (cond ((zero? n) 1) ((= n 1) 1) (else (+ (fib (- n 1)) (fib (- n 2))))))
-          <br>fib</code><br><br><code>scm> (fib 1)<br>1</code><br><br><code>scm> (fib 3)<br>3</code><br><br><code>scm> (fib 10)<br>89</code>
-        </div>
-      </div>
-    </div>
-  </div>
   <div id="menubar">
     <a href="#top-section"><div class="menuitem" id="menuabout">ABOUT</div></a>
     <a href="#exp-section"><div class="menuitem" id="menuprojects">EXPERIENCE</div></a>
@@ -106,20 +41,21 @@
           <div style="margin: 0 auto;" id="about" class="col-md-12 col-lg-8 col-md-offset-1">
             I am a sophomore studying <a href="https://eecs.berkeley.edu" class="href">Electrical Engineering & Computer Science</a> at
             <a href="https://berkeley.edu" class="href">UC Berkeley</a>.
-            I am curious about pretty much everything and anything, but I have a special interest in machine learning and networks.
-            I am currently researching application resource utilization bottlenecks at <a href="https://netsys.cs.berkeley.edu" class="href">NetSys Lab</a>. <br> <br>
-            Also, I love <a href="http://www.omfgdogs.com/" class="href">dogs</a>.
+            I am curious about pretty much everything and anything, but I have a special interest in network systems.
+            I currently research resource utilization bottlenecks in distributed systems at <a href="https://netsys.cs.berkeley.edu" class="href">NetSys Lab</a>
+            and work as a developer for <a href="berkeleytime.com" class="href">Berkeleytime</a><br><br>
+            Also, I love <a href="images/amber.jpg" class="href">dogs</a>.
           </div>
 
         </div>
       </div>
       <div class="section" id="exp-section">
-        <div class="sub-title" style="width: 400px">Experience</div>
         <div id="jobs">
+          <div class="sub-title" style="text-align: center;">Research</div>
           <div class="job">
             <div class="row">
               <div class="col-8">
-                <div class="jobname"><a href="https://netsys.cs.berkeley.edu" class="href2">Netsys Laboratory</a></div>
+                <div class="jobname"><a href="https://netsys.cs.berkeley.edu" class="href2">Network Systems Laboratory</a></div>
                 <div class="position">Research Assistant</div>
                 <div class="jobdays">April 2017 - Present</div>
               </div>
@@ -127,8 +63,29 @@
                 <img src="images/netsys.png" class="job-img"></img>
               </div>
             </div>
-            <div class="description">Working on software to identify resource utilization bottlenecks in distributed, containerized services but throttling individual conatiner resources
-              on services using Docker, Spark, and Nginx.
+            <div class="description">Researching resource utilization bottlenecks in distributed, containerized services. Currently working on <a href="https://github.com/mchang6137/throttlebot" class="href2">
+              Throttlebot</a>, an application which empirically stresses the pipeline to determine the impact of microservice level resource
+              allocation on application performance, and uses this information to automatically optimize resource provision.<br>
+            </div><ul>
+            <li><a href="https://arxiv.org/abs/1711.00618" class="href2">ThrottleBot - Performance without Insight</a>
+                 - arXiv, 2017<br>
+                  Michael Alan Chang, Aurojit Panda, Yuan-Cheng Tsai, <em>Hantao Wang</em>, Scott Shenker
+            </ul>
+          </div>
+          <div class="sub-title" style="text-align: center;">Experience</div>
+          <div class="job">
+            <div class="row">
+              <div class="col-8">
+                <div class="jobname"><a href="https://berkeleytime.com" class="href2">Berkeleytime</a></div>
+                <div class="position">Full Stack Engineer</div>
+                <div class="jobdays">September 2017 - Present</div>
+              </div>
+              <div class="col-4">
+                <img src="images/berkeleytime.png" class="job-img"></img>
+              </div>
+            </div>
+            <div class="description">Working mainly on backend projects like the scheduler, user authentication, and database migrations.
+              But once every 1000 RuntimeErrors, I will create something beautiful on the frontend.
             </div>
           </div>
           <div class="job">
@@ -142,8 +99,8 @@
                 <img src="images/gulfstream.png" class="job-img"></img>
               </div>
             </div>
-            <div class="description">Assisted mechanical engineering teams in drafting, drawing, and checking of interior competions designs of Gulfstream G550 and G650 aircrafts.
-              Daily responsibilities included extensive use of AutoCAD, CATIA, and Excel.
+            <div class="description">Assisted mechanical engineering teams in drafting, drawing, and checking of interior competions designs of Gulfstream G550 and G650 aircrafts
+              using AutoCAD and CATIA.
             </div>
           </div>
 
@@ -158,55 +115,47 @@
             <div class="skill">&emsp;Java<div class="bar">
               <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
             </div></div>
-            <div class="skill">&emsp;C<div class="bar">
-              <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
-            </div></div>
-            <div class="skill">&emsp;HTML/CSS<div class="bar">
-              <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
-            </div></div>
             <div class="skill">&emsp;Javascript<div class="bar">
               <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
             </div></div>
-            <div class="skill">&emsp;Ruby<div class="bar">
-              <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
+            <div class="skill">&emsp;Django<div class="bar">
+              <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
+            </div></div>
+            <div class="skill">&emsp;Docker<div class="bar">
+              <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
             </div></div>
             <div class="skill">&emsp;Bootstrap<div class="bar">
               <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
               </div></div>
           </div>
           <div class="skill-table">
-            <div class="skill">&emsp;Django<div class="bar">
-              <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
+            <div class="skill">&emsp;C<div class="bar">
+                <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
             </div></div>
-            <div class="skill">&emsp;Scheme<div class="bar">
-                <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
+            <div class="skill">&emsp;Ruby<div class="bar">
+                <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
             </div></div>
-            <div class="skill">&emsp;AutoCAD<div class="bar">
-                <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
-            </div></div>
-            <div class="skill">&emsp;SolidWorks<div class="bar">
-                <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
+            <div class="skill">&emsp;SQL<div class="bar">
+                <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
             </div></div>
             <div class="skill">&emsp;Node.Js<div class="bar">
                 <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
             </div></div>
-            <div class="skill">&emsp;Angular.JS<div class="bar"> Planned</div></div>
-            <div class="skill">&emsp;MySQL<div class="bar">
-                <img src="images/star.png" class="star"><img src="images/star.png" class="star"><img src="images/star.png" class="star">
-            </div></div>
+            <div class="skill">&emsp;React.JS<div class="bar"> Planned</div></div>
+            <div class="skill">&emsp;Go<div class="bar">Planned</div></div>
           </div>
         </div></div>
       <div class="section" id="project-section">
         <div class="sub-title" style="width: 320px;">Projects</div>
-        <div class="projitem" id="p1">
-          <div class="overlay" id="o1">
-            <div class="overlay-title">Scheme</div>
+        <a href="https://github.com/hantaowang/food-finder" target="_blank">
+        <div class="projitem" id="p5">
+          <div class="overlay" id="o5">
+            <div class="overlay-title">Food Finder</div>
             <div class="overlay-bar"></div>
-            <div class="overlay-text">Interactive scheme interpretor that reads and exceutes user input in Scheme, a dialect of Lisp. Focuses on OOP, keeps track of environemnts, and is written in Python. </div>
+            <div class="overlay-text">Distributed Django app that learns the user's preference and helps them choose were to eat with the Yelp API. Also uses Redis, etcd and deployed with Quilt on Docker and AWS.</div>
           </div>
-          <img src="images/scheme.png" class="proj_img" id="i1">
-        </div>
-        <!-- <a href="http://5e9a0d73.ngrok.io/map.html" target="_blank"> -->
+          <img src="images/krabby.png" class="proj_img" id="i5">
+        </div></a>
         <div class="projitem" id="p2">
           <div class="overlay" id="o2">
             <div class="overlay-title">BearMaps</div>
@@ -215,7 +164,6 @@
           </div>
           <img src="images/bearmaps.png" class="proj_img" id="i2">
         </div>
-      <!-- </a> -->
           <div class="projitem" id="p3">
             <div class="overlay" id="o3">
               <div class="overlay-title">Database</div>
@@ -224,23 +172,22 @@
             </div>
             <img src="images/database.png" class="proj_img" id="i3">
           </div>
-          <a href="https://github.com/hantaowang/hantaowang.github.io" target="_blank">
+          <div class="projitem" id="p1">
+            <div class="overlay" id="o1">
+              <div class="overlay-title">Scheme</div>
+              <div class="overlay-bar"></div>
+              <div class="overlay-text">Interactive scheme interpretor that reads and exceutes user input in Scheme, a dialect of Lisp. Focuses on OOP, keeps track of environemnts, and is written in Python. </div>
+            </div>
+            <img src="images/scheme.png" class="proj_img" id="i1">
+          </div>
+          <a href="https://github.com/hantaowang/metman" target="_blank">
           <div class="projitem" id="p4">
             <div class="overlay" id="o4">
-              <div class="overlay-title">hantaowang.me</div>
+              <div class="overlay-title">metman</div>
               <div class="overlay-bar"></div>
-              <div class="overlay-text">Personal website written with HTML, CSS, and Javscript. Server side written with Express.JS and Node.JS.</div>
+              <div class="overlay-text">A Node.JS server that runs a FORTRAN application and performs complex calculations that stimulate human body conditions inside a spacesuit on Mars.</div>
             </div>
-            <img src="images/website.png" class="proj_img" id="i4">
-          </div></a>
-          <a href="https://github.com/hantaowang/pyCalc" target="_blank">
-          <div class="projitem" id="p5">
-            <div class="overlay" id="o5">
-              <div class="overlay-title">pyCalc</div>
-              <div class="overlay-bar"></div>
-              <div class="overlay-text">Python based graphing calculator that reads, evaluates, and graphs user input. Emphasizes Read-Print-Evalv Loops (REPL) and Tree Objects.</div>
-            </div>
-            <img src="images/calc.png" class="proj_img" id="i5">
+            <img src="images/41node.png" class="proj_img" id="i4">
           </div></a>
           <a href="https://github.com/hantaowang/Ruby-Blackjack" target="_blank">
           <div class="projitem" id="p6">

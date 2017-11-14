@@ -11,6 +11,8 @@ body{
   padding: 0;
   text-align: center;
   overflow: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 .menufalse{
@@ -153,7 +155,7 @@ body{
   height: 50px;
   width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 24pt;
+  font-size: 20pt;
   text-align: left;
   line-height: 50px;
   color: white;
@@ -208,7 +210,8 @@ body{
 
 .job{
   width: 100%;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .jobname{
@@ -237,7 +240,6 @@ body{
 
 .jobdays, .position, .description{
   width: 250px;
-  font-weight: lighter;
   display: inline-block;
   text-align: left;
 }
@@ -251,6 +253,7 @@ body{
 .job-info{
   display: inline-block;
   width: 70%;
+  font-size: 20pt;
 }
 
 .job-img{
