@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "AvenirNext-Bold";
+    src: url("../assets/fonts/AvenirNext-Bold.ttf") format("truetype");/* TTF file for CSS3 browsers */
+}
+
+@font-face {
+    font-family: "AvenirNext-DemiBold";
+    src: url("../assets/fonts/AvenirNext-DemiBold.ttf") format("truetype");/* TTF file for CSS3 browsers */
+}
+
+@font-face {
+    font-family: "AvenirNext-Regular";
+    src: url("../assets/fonts/AvenirNext-Regular.ttf") format("truetype");/* TTF file for CSS3 browsers */
+}
+
+body {
+  background-color: #f7f7f7;
+  min-width: 975px;
+}
+
+#main {
+  width: 975px;
+  color: #353535;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  padding-right: 20px;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration:none;
+  color: #353535;
+  font-weight: bold;
+}
+
+a, a:focus, a:visited {
+  text-decoration:none;
+}
+
+#nav {
+  margin-top: 75px;
+  font-weight: 300;
+
+}
