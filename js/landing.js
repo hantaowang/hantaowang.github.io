@@ -1,6 +1,6 @@
 var jobs = ["engineer", "researcher", "student", "developer", "teacher"];
 var articles = ["an", "a", "a", "a", "a"];
-var index = 0;
+var index;
 
 function changeJob() {
   prev = index;
@@ -25,5 +25,10 @@ function changeJob() {
 }
 
 $(document).ready(function() {
+  index = Math.floor(Math.random() * jobs.length);
+  htmlStr = articles[index] + " <span id='job' class='bold'>" + jobs[index] +".</span>";
+  target = "#jobtitle";
+  $(target).html(htmlStr);
+
   setTimeout(changeJob, 2000);
 });
