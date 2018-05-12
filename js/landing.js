@@ -25,5 +25,5 @@ function changeJob() {
 }
 
 $(document).ready(function() {
-  setTimeout(changeJob, 3000);
+  setTimeout(changeJob, 2000);
 });

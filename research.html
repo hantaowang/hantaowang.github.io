@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Research - Will Wang</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/page.css">
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/landing.js"></script>
+
+</head>
+
+<body>
+  <div class="container" id="main">
+    <div id="title">Research</div>
+        <p>
+          I currently research in the UC Berkeley Network Systems laboratory.
+          My previous and current work deal mainly with distributed systems and its optimization
+          and stability. During the summer I will also be looking at topics in congestion control.
+          <br><br>
+          Most of my work is implemented in Python, Javascript, and Go, althought I have additionally
+          used C and Ruby. Service level knowledge include Docker, Kubernetes, and AWS.
+        </p>
+        <div>
+          <div class="subtitle">ThrottleBot</div>
+          <p>
+            The ThrottleBot project aims to minimize the cost to deploy a distributed system by minimizing
+            resource allocation while maintaining or even improving performance. It automatically cuts down on overprovisioned
+            resources and alleviates underprovisioned ones, packing the system into the minimum number of nodes required.
+            Currently under submission @ OSDI.
+          </p>
+        </div>
+        <div>
+          <div class="subtitle">Triggers</div>
+          <p>
+            Operators running a distributed system can enforce properties (i.e. fault tolerance of a distributed database) <body>
+              specifying a set of even driven triggers that perform an action (i.e. move worker if more than 50% of workers on same machine)
+              when activated. When systems become complex, these triggers may have unindented and troublesome effects when used together, most notably
+              nonconvergence or unbounded growth. The triggers project aims to detect these before deployment.
+            </body>
+          </p>
+        </div>
+        <div>
+          <div class="subtitle">Performance-orientated Congestion Control</div>
+          <p>
+            PCC is a new online learning algorithm for congestion control that uses gradient ascent to converge to the opimtal sending rate.
+            The goal of this project is to study the behavior of PCC under environemnts with variable non-uniform random loss.
+          </p>
+        </div>
+    <div id="nav">
+      <a href="index.html">Main</a>
+      <a href="about.html">About</a>
+      <a href="underconstruction.html">Work</a>
+      <a href="underconstruction.html">Teaching</a>
+      <a href="underconstruction.html">Contact</a>
+    </div>
+  </div>
+</body>
+</html>
