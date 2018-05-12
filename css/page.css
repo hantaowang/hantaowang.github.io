@@ -25,5 +25,6 @@
 
 .link:hover {
   background-position: 0% 100%;
-  color: #f7f7f7
+  color: #f7f7f7;
+  font-weight: 300;
 }
