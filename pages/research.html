@@ -35,28 +35,33 @@
         <p>
           I currently research in the UC Berkeley Network Systems laboratory.
           My previous and current work deal mainly with distributed systems and its optimization
-          and stability. During the summer I will also be looking at topics in congestion control.
+          and stability.
           <br><br>
           Most of my work is implemented in Python, Javascript, and Go, althought I have additionally
           used C and Ruby. Service level knowledge include Docker, Kubernetes, and AWS.
         </p>
         <div>
-          <div class="subtitle">ThrottleBot</div>
+          <div class="subtitle">AutoTune</div>
           <p>
-            The ThrottleBot project aims to minimize the cost to deploy a distributed system by minimizing
+            The AutoTune project aims to minimize the cost to deploy a distributed system by minimizing
             resource allocation while maintaining or even improving performance. It automatically cuts down on overprovisioned
             resources and alleviates underprovisioned ones, packing the system into the minimum number of nodes required.
-            Currently under submission @ OSDI.
-          </p>
+          <br><br>
+            AutoTune is implented in Python and uses microservice-resouce stressing to determine under and over provisioned
+            resources. 
+           </p>
         </div>
         <div>
-          <div class="subtitle">Triggers</div>
+          <div class="subtitle">Verified Triggers</div>
           <p>
-            Operators running a distributed system can enforce properties (i.e. fault tolerance of a distributed database) <body>
+            Operators running a distributed system can enforce properties (i.e. fault tolerance of a distributed database)
               specifying a set of even driven triggers that perform an action (i.e. move worker if more than 50% of workers on same machine)
               when activated. When systems become complex, these triggers may have unintended and troublesome effects when used together, most notably
-              nonconvergence or unbounded growth. The triggers project aims to detect these before deployment.
-            </body>
+              nonconvergence or unbounded growth. 
+            <br><br>
+              The verified triggers project provides <i>Scotty</i>, a Kubernetes controller which I architected and developed that allows the user to define triggers and enforce invariants
+              on the cluster. The project also aims to be able to verify these invariants and warn the user if the cluster could fall into an unsafe state where the invariants
+              are broken or conflict.
           </p>
         </div>
     <div id="nav">

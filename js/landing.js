@@ -21,7 +21,7 @@ function changeJob() {
     $(this).html(htmlStr)
   }).fadeIn("slow");
 
-  setTimeout(changeJob, 3000);
+  setTimeout(changeJob, 2000);
 }
 
 $(document).ready(function() {
@@ -30,5 +30,5 @@ $(document).ready(function() {
   target = "#jobtitle";
   $(target).html(htmlStr);
 
-  setTimeout(changeJob, 2000);
+  setTimeout(changeJob, 1000);
 });
