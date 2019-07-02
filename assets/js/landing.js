@@ -1,5 +1,5 @@
-var jobs = ["engineer", "researcher", "student", "developer", "teacher"];
-var articles = ["an", "a", "a", "a", "a"];
+var jobs = ["kubernetes fanatic", " distributed systems researcher", "graduate student @ Cal", "non profit developer", "computer systems GSI"];
+var articles = ["a", "a", "a", "a", "a"];
 var index;
 
 function changeJob() {

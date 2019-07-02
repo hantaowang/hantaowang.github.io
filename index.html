@@ -3,45 +3,253 @@
 <head>
   <title>Will Wang</title>
   <meta charset="utf-8">
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119888602-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
     gtag('config', 'UA-119888602-1');
   </script>
-  
+
   <link rel="shortcut icon" type="image/png" href="assets/images/icon.png">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/base.css">
-  <link rel="stylesheet" type="text/css" href="css/landing.css">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cantarell&display=swap" rel="stylesheet">
 
   <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="js/landing.js"></script>
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/landing.css">
+  <script src="assets/js/landing.js"></script>
 </head>
 
 <body>
-  <div class="container" id="main">
-    <div id="title">Will Wang</div>
-    <div id="subtitle">I am <span id="jobtitle">an <span id="job" class="bold">engineer.</span></span></div>
-    <div class="descript">
-      Computer Science @ UC Berkeley. <br>
-      Network & Systems research. Berkeleytime dev. CS162 uGSI.
+<div class="container" id="main">
+  <!--LANDING-->
+  <div class="title">Will Wang</div>
+  <div class="subtitle">I am <span id="jobtitle">an <span id="job" class="bold">engineer.</span></span></div>
+  <div class="descript">
+    B.S & M.S Computer Science @ UC Berkeley. <br>
+    Distributed and Operating Systems <br>
+    SWE Intern @ Google GKE <br>
+  </div>
+
+  <!--ABOUT-->
+  <div class="subsubtitle">About</div>
+  <div class="row">
+    <div class="col-7">
+      <div class="text">
+        I'm Will, a current M.S. and former B.S. student at <a href="https://eecs.berkeley.edu/" target="_blank" class="link">UC Berkeley</a>. I'm a
+        Kubernetes fanatic and am interested in building distributed systems and infrastructure. I'm currently interning on the Kubernetes Storage
+        team at Google working on the <a href="https://github.com/kubernetes-sigs/gcp-compute-persistent-disk-csi-driver" target="_blank"
+                                         class="link">
+        CSI PD Diver</a> and scaling storage to 5000+ nodes.
+        <br><br>
+        I've advised by Prof. <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html" target="_blank" class="link">Scott Shenker</a>
+        and am part of <a href="https://netsys.cs.berkeley.edu/" target="_blank" class="link">NetSys</a> lab. My research concentrates on difficult
+        problems in distributed systems such as resource allocation optimization. I've taught the Operating Systems and Networking classes in
+        various GSI positions. Aside from school, I develop for the non-profit site <a href="https://berkeleytime.com" target="_blank"
+                                                                                       class="link">berkeleytime.com</a>.
+        <br><br>
+        Check out out my
+        <a href="assets/files/resume.pdf" target="_blank" class="link">resume</a>,
+        <a href="https://github.com/hantaowang" class="link" target="_blank">GitHub</a>,
+        <a href="https://linkedin.com/in/hwang97" class="link" target="_blank">LinkedIn</a>, and
+        <a href="mailto:hwang97@berkeley.edu" class="link">email</a>.
+        <br><br>
+        In true Kubernetes fashion, here is a summary of who I am as a Kube resource YAML.
+      </div>
     </div>
-    <div class="descript">
-      <a href="pages/about.html">About</a>
-      <a href="pages/research.html">Research</a>
-      <a href="pages/engineering.html">Engineering</a>
-      <a href="pages/teaching.html">Teaching</a>
+    <div class="col-5">
+      <img id="will" src="assets/images/will.jpg" alt="My Face">
     </div>
   </div>
+  <pre><code>
+  kind: SWE
+  apiVersion: apps/v1
+  metadata:
+    name: Will Wang
+  spec:
+    education:
+     - M.S. Computer Science @ Berkeley (2020)
+     - B.S. Electrical Engineering & Computer Science @ Berkeley (2019)
+    experience:
+     - SWE Intern @ <a href="https://cloud.google.com/kubernetes-engine/" target="_blank">Google</a> (Kubernetes Storage, GKE)
+     - Product Manager, Backend Engineering Lead @ <a href="https://berkeleytime.com" target="_blank">berkeleytime.com</a>.
+     - SWE Intern @ <a href="https://kelda.io" target="_blank">Kelda</a> (Kubernetes)
+    research:
+      advisor: Prof. <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html" target="_blank">Scott Shenker</a>
+      lab: <a href="https://netsys.cs.berkeley.edu/" target="_blank">Network Systems</a>
+      concentration: Distributed Systems
+      projects:
+       - Resource Allocation Optimization in Distributed Systems
+       - Security and Privacy Policies via Lineage Tracing
+    teaching:
+     - Head GSI @ <a href="https://cs162.eecs.berkeley.edu/" target="_blank">CS 162</a> Operating Systems (Fall 2019)
+     - uGSI @ <a href="https://cs162.eecs.berkeley.edu/" target="_blank">CS 162</a> Operating Systems (Spring 2019)
+     - uGSI @ <a href="http://cs168.io/" target="_blank">CS 168</a> Networking (Fall 2018)
+    writing:
+     - How Microservices Saved the Internet (<a href="https://hackernoon.com/how-microservices-saved-the-internet-30cd4b9c6230"
+                                                target="_blank">Medium</a>)
+     - Demystifying containers 101 (<a
+      href="https://medium.com/free-code-camp/demystifying-containers-101-a-deep-dive-into-container-technology-for-beginners-d7b60d8511c1"
+      target="_blank">Medium</a>)
+    </code></pre>
+
+  <!--Experience-->
+  <div class="subsubtitle">Experience</div>
+  <div class="text">
+    Here are the companies and organizations that I either previously or currently worked for
+    as an engineer. For specifics involving the work done or (if possible) code written, please
+    contact me by email. I have also done a lot of course development for CS 168 and CS 162,
+    which is not listed here.
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+      <div class="supersubtitle">Google</div>
+      <div class="work-desc row">
+        <div class="col-6">Software Engineering Intern</div>
+        <div class="col-6" style="text-align: right;">Summer 2019</div>
+      </div>
+      <div class="text" style="text-align: justify">
+        I worked on a couple projects as part of the GKE Kubernetes Storage Lifecycle team: (1) parallelizing node level operations in the GCP
+        persistent
+        volume container storage interface driver, (2) ensure idempotency in controller attach detach operations, (3) and scaling Kubernetes storage
+        to
+        multi-thousand node clusters.
+      </div>
+    </div>
+    <div class="col-4"><img class="work-img" src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c51f.png"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+      <div class="supersubtitle">Kelda</div>
+      <div class="work-desc row">
+        <div class="col-6">Software Engineering Intern</div>
+        <div class="col-6" style="text-align: right;">Summer 2018</div>
+      </div>
+      <div class="text" style="text-align: justify">
+        I worked with a small team of researchers from NetSys on making Kubernetes more accessible by creating a local development tool that eases the
+        complex CI/CD and incident response pipelines. I built applications using GKE, AWS, and Minikube along with monitoring, logging, and CI/CD
+        tools such as Jenkins, Spinnaker, Gitlab, Prometheus, Elasticsearch, etc.
+      </div>
+    </div>
+    <div class="col-4"><img class="work-img" src="assets/images/kelda.svg"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+      <div class="supersubtitle">Berkeleytime</div>
+      <div class="work-desc row">
+        <div class="col-6">Backend Engineering Lead</div>
+        <div class="col-6" style="text-align: right">September 2017 - Present</div>
+      </div>
+      <div class="text" style="text-align: justify">
+        Berkeleytime is UC Berkeley's most popular course catalog, with over 26,000 unique monthly users. I led and developed on major initiatives to
+        redesign a new frontend in React and move our infrastructure from Heroku to Kubernetes. I also worked on Django backend projects like the
+        scheduler, user authentication, and application performance.
+      </div>
+    </div>
+    <div class="col-4">
+      <img class="work-img"
+           style="padding: 25% 5% 0 0;"
+           src="assets/images/berkeleytime.png">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+      <div class="supersubtitle">Gulfstream Aerospace</div>
+      <div class="work-desc row">
+        <div class="col-6">High School Intern</div>
+        <div class="col-6" style="text-align: right;">August 2015 - June 2016</div>
+      </div>
+      <div class="text" style="text-align: justify">
+        In high school, I was interested in mechanical engineering and so took an apprenticeship at Gulfstream Aerospace working on interior
+        mechanical design of their G550 and G650 aircraft.
+      </div>
+    </div>
+    <div class="col-4">
+      <img class="work-img"
+           style="padding: 30% 5% 0 0;"
+           src="assets/images/gulfstream.png">
+    </div>
+  </div>
+
+  <!--Teaching-->
+  <div class="subsubtitle">Teaching</div>
+  <div class="text">
+    <p>I haven't been teaching for too long, but I have held various roles across the the courses here at Berkeley, mostly in the systems area.
+    So far I have been a:</p>
+    <ul>
+      <li><p>Head GSI for CS 162 (Fall 2019)</p></li>
+      <li><p>20 Hour uGSI for CS 162 (Spring 2019)</p></li>
+      <li><p>8 Hour uGSI for CS 168 (Fall 2018)</p></li>
+      <li><p>Junior CSM Mentor for CS 61B (Spring 2018)</p></li>
+      <li><p>Academic Intern for CS 61B (Spring 2018)</p></li>
+    </ul>
+    <p>And I have created the following learning material:</p>
+    <ul>
+      <li><p>How Microservices Saved the Internet (<a href="https://hackernoon.com/how-microservices-saved-the-internet-30cd4b9c6230"
+                                                      target="_blank">Medium</a>)</p></li>
+      <li><p>Demystifying containers 101 (<a
+        href="https://medium.com/free-code-camp/demystifying-containers-101-a-deep-dive-into-container-technology-for-beginners-d7b60d8511c1"
+        target="_blank">Medium</a>)</p></li>
+      </p></li>
+      <li><p>CS 168 Project 2: Transport</p></li>
+      <li><p>Path Compression Sections 4 & 5 of WQUPC Worksheet (<a target="_blank" href="assets/files/wqupc.pdf">link</a>)</p></li>
+    </ul>
+  </div>
+
+  <!--Research-->
+  <div class="subsubtitle">Research</div>
+  <div class="text">
+    I currently research in the UC Berkeley Network Systems laboratory. My  work deal mainly with distributed systems, its optimization,
+    and providing system guarantees. My research is focused on practical solutions to real world problems in distributed systems. I've been involved
+    in research since I was a freshman in undergrad, and I have worked on all aspects of research as you would expect from a graduate student.
+    Most of my work is implemented in Go, Python, and Javascript, although I have additionally used C and Ruby.
+    Service level knowledge include Docker, Kubernetes, and AWS/GCP.
+  </div>
+  <div class="supersubtitle">Resource Allocation Optimization in Distributed Systems (AutoTune)</div>
+  <div class="text">
+    The AutoTune project aims to reduce the cost to deploy a distributed system by minimizing
+    resource allocation while improving performance. It automatically cuts down on overprovisioned
+    resources and alleviates underprovisioned ones, then packing the system into the minimum number of nodes required.
+    AutoTune is implented in Python and uses microservice-resource stressing to determine under and over provisioned resources.
+    A pre-print paper for this project is available upon request.
+  </div>
+  <div class="supersubtitle">Security and Privacy Policies via Lineage Tracing</div>
+  <div class="text">
+    This ongoing project aims to build a system for globally deploying and
+    enforcing data based policies at the microservice level with-out intrusive application code level modifications. We hope
+    that it can be used by compliance experts with minimal software engineering experience to easily program complex
+    privacy and security policies into existing infrastructure.
+    This is accomplished by tracking pieces of data, called tuples, at the cluster level using data lineage and then blocking the
+    flow of data between microservices if it does not pass all the relevant policies. A very rough whitepaper is availabel upon request.
+  </div>
+  <div class="supersubtitle">Verified Triggers</div>
+  <div class="text">
+    Verified Triggers was an exploratory project to safely declare and enforce cluster wise policies in Kubernetes.
+    Operators running a distributed system can enforce properties (i.e. fault tolerance of a distributed database) by
+    specifying a set of event driven triggers that perform an action (i.e. move worker if more than 50% of workers on same machine)
+    when activated. When systems become complex, these triggers may have unintended and troublesome effects when used together, most notably
+    nonconvergence or unbounded growth.
+  </div>
+</div>
+
 </body>
 </html>
