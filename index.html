@@ -3,8 +3,9 @@
 <head>
   <title>Will Wang</title>
   <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="assets/images/icon.png">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!--Google Analytics-->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119888602-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,19 +18,23 @@
     gtag('config', 'UA-119888602-1');
   </script>
 
-  <link rel="shortcut icon" type="image/png" href="assets/images/icon.png">
+  <!--Bootstrap-->
   <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
         integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
+
+  <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cantarell&display=swap" rel="stylesheet">
 
+  <!--JQuery-->
   <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
 
+  <!--Custom-->
   <link rel="stylesheet" type="text/css" href="assets/css/base.css">
   <link rel="stylesheet" type="text/css" href="assets/css/landing.css">
   <script src="assets/js/landing.js"></script>
@@ -37,6 +42,7 @@
 
 <body>
 <div class="container" id="main">
+
   <!--LANDING-->
   <div class="title">Will Wang</div>
   <div class="subtitle">I am <span id="jobtitle">an <span id="job" class="bold">engineer.</span></span></div>
@@ -194,7 +200,7 @@
   <div class="subsubtitle">Teaching</div>
   <div class="text">
     <p>I haven't been teaching for too long, but I have held various roles across the the courses here at Berkeley, mostly in the systems area.
-    So far I have been a:</p>
+      So far I have been a:</p>
     <ul>
       <li><p>Head GSI for CS 162 (Fall 2019)</p></li>
       <li><p>20 Hour uGSI for CS 162 (Spring 2019)</p></li>
@@ -207,8 +213,8 @@
       <li><p>How Microservices Saved the Internet (<a href="https://hackernoon.com/how-microservices-saved-the-internet-30cd4b9c6230"
                                                       target="_blank">Medium</a>)</p></li>
       <li><p>Demystifying containers 101 (<a
-        href="https://medium.com/free-code-camp/demystifying-containers-101-a-deep-dive-into-container-technology-for-beginners-d7b60d8511c1"
-        target="_blank">Medium</a>)</p></li>
+          href="https://medium.com/free-code-camp/demystifying-containers-101-a-deep-dive-into-container-technology-for-beginners-d7b60d8511c1"
+          target="_blank">Medium</a>)</p></li>
       </p></li>
       <li><p>CS 168 Project 2: Transport</p></li>
       <li><p>Path Compression Sections 4 & 5 of WQUPC Worksheet (<a target="_blank" href="assets/files/wqupc.pdf">link</a>)</p></li>
@@ -218,7 +224,7 @@
   <!--Research-->
   <div class="subsubtitle">Research</div>
   <div class="text">
-    I currently research in the UC Berkeley Network Systems laboratory. My  work deal mainly with distributed systems, its optimization,
+    I currently research in the UC Berkeley Network Systems laboratory. My work deal mainly with distributed systems, its optimization,
     and providing system guarantees. My research is focused on practical solutions to real world problems in distributed systems. I've been involved
     in research since I was a freshman in undergrad, and I have worked on all aspects of research as you would expect from a graduate student.
     Most of my work is implemented in Go, Python, and Javascript, although I have additionally used C and Ruby.
@@ -229,7 +235,7 @@
     The AutoTune project aims to reduce the cost to deploy a distributed system by minimizing
     resource allocation while improving performance. It automatically cuts down on overprovisioned
     resources and alleviates underprovisioned ones, then packing the system into the minimum number of nodes required.
-    AutoTune is implented in Python and uses microservice-resource stressing to determine under and over provisioned resources.
+    AutoTune is implemented in Python and uses microservice-resource stressing to determine under and over provisioned resources.
     A pre-print paper for this project is available upon request.
   </div>
   <div class="supersubtitle">Security and Privacy Policies via Lineage Tracing</div>
@@ -239,7 +245,7 @@
     that it can be used by compliance experts with minimal software engineering experience to easily program complex
     privacy and security policies into existing infrastructure.
     This is accomplished by tracking pieces of data, called tuples, at the cluster level using data lineage and then blocking the
-    flow of data between microservices if it does not pass all the relevant policies. A very rough whitepaper is availabel upon request.
+    flow of data between microservices if it does not pass all the relevant policies. A very rough whitepaper is available upon request.
   </div>
   <div class="supersubtitle">Verified Triggers</div>
   <div class="text">
@@ -247,7 +253,7 @@
     Operators running a distributed system can enforce properties (i.e. fault tolerance of a distributed database) by
     specifying a set of event driven triggers that perform an action (i.e. move worker if more than 50% of workers on same machine)
     when activated. When systems become complex, these triggers may have unintended and troublesome effects when used together, most notably
-    nonconvergence or unbounded growth.
+    non-convergence or unbounded growth.
   </div>
 </div>
 
