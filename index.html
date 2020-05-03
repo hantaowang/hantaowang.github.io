@@ -49,7 +49,7 @@
   <div class="descript">
     B.S & M.S Computer Science @ UC Berkeley. <br>
     Distributed and Operating Systems <br>
-    SWE Intern @ Google GKE <br>
+    SWE @ Stripe <br>
   </div>
 
   <!--ABOUT-->
@@ -57,20 +57,20 @@
   <div class="row">
     <div class="col-7">
       <div class="text">
-        I'm Will, a current M.S. and former B.S. student at <a href="https://eecs.berkeley.edu/" target="_blank" class="link">UC Berkeley</a>. I'm a
-        Kubernetes fanatic and am interested in building distributed systems and infrastructure. I'm currently interning on the Kubernetes Storage
-        team at Google working on the <a href="https://github.com/kubernetes-sigs/gcp-compute-persistent-disk-csi-driver" target="_blank"
-                                         class="link">
-        CSI PD Diver</a> and scaling storage to 5000+ nodes.
-        <br><br>
-        I've advised by Prof. <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html" target="_blank" class="link">Scott Shenker</a>
-        and am part of <a href="https://netsys.cs.berkeley.edu/" target="_blank" class="link">NetSys</a> lab. My research concentrates on difficult
-        problems in distributed systems such as resource allocation optimization. I've taught the Operating Systems and Networking classes in
-        various GSI positions. Aside from school, I develop for the non-profit site <a href="https://berkeleytime.com" target="_blank"
-                                                                                       class="link">berkeleytime.com</a>.
+        I'm Will, I graduated with a M.S. and B.S. in computer science from  <a href="https://eecs.berkeley.edu/" target="_blank" class="link">UC Berkeley</a>.
+        I'm a Kubernetes fanatic and am interested in building distributed systems and infrastructure. I am currently working on
+        Banking Integration at <a href="https://stripe.com" target="_blank" class="link">Stripe</a>. In my free time
+        I hack around on Kubernetes and Envoy. Previously I interned on the Kubernetes Storage team at Google working
+        on the <a href="https://github.com/kubernetes-sigs/gcp-compute-persistent-disk-csi-driver" target="_blank" class="link">CSI PD Diver</a>
+        and scaling storage to 5000+ nodes.<br><br>
+        I was advised by Prof. <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html" target="_blank" class="link">Scott Shenker</a>
+        and was part of <a href="https://netsys.cs.berkeley.edu/" target="_blank" class="link">NetSys</a> lab. My research focus was
+        automated resource allocation optimization in distributed systems and infrastructure level data privacy policy enforcement.
+        I've taught the Operating Systems, Networking, and Data Structures classes in various GSI positions.
+
+        Aside from school, I develop for the non-profit site <a href="https://berkeleytime.com" target="_blank" class="link">berkeleytime.com</a>.
         <br><br>
         Check out out my
-        <a href="assets/files/resume.pdf" target="_blank" class="link">resume</a>,
         <a href="https://github.com/hantaowang" class="link" target="_blank">GitHub</a>,
         <a href="https://linkedin.com/in/hwang97" class="link" target="_blank">LinkedIn</a>, and
         <a href="mailto:hwang97@berkeley.edu" class="link">email</a>.
@@ -101,7 +101,7 @@
       concentration: Distributed Systems
       projects:
        - Resource Allocation Optimization in Distributed Systems
-       - Security and Privacy Policies via Lineage Tracing
+       - Infrastructure Level Data Policies
     teaching:
      - GSI @ <a href="https://inst.eecs.berkeley.edu/~cs61b/sp20/" target="_blank">CS 61B</a> Data Structures (Spring 2020)
      - uGSI, Head GSI @ <a href="https://cs162.eecs.berkeley.edu/" target="_blank">CS 162</a> Operating Systems (Spring 2019, Fall 2019)
@@ -116,12 +116,6 @@
 
   <!--Experience-->
   <div class="subsubtitle">Experience</div>
-  <div class="text">
-    Here are the companies and organizations that I either previously or currently worked for
-    as an engineer. For specifics involving the work done or (if possible) code written, please
-    contact me by email. I have also done a lot of course development for CS 168 and CS 162,
-    which is not listed here.
-  </div>
 
   <div class="row">
     <div class="col-8">
@@ -192,6 +186,26 @@
     </div>
   </div>
 
+  <!--Research-->
+  <div class="subsubtitle">Research</div>
+  <div class="text">
+    I currently research in the UC Berkeley Network Systems laboratory. My work deal mainly with distributed systems, its optimization,
+    and data privacy. My research is focused on practical solutions to real world problems in distributed systems.
+  </div>
+  <div class="supersubtitle">Resource Allocation Optimization in Distributed Systems (AutoTune)</div>
+  <div class="text">
+    The AutoTune project aims to reduce the cost to deploy a distributed system by minimizing
+    resource allocation while improving performance. It automatically cuts down on overprovisioned
+    resources and alleviates underprovisioned ones, then packing the system into the minimum number of nodes required.
+    AutoTune is implemented in Python and uses microservice-resource stressing to determine under and over provisioned resources.
+  </div>
+  <div class="supersubtitle">Infrastructure Level Data Privacy</div>
+  <div class="text">
+    Built on top of the popular orchestration infrastructure Kubernetes and Istio, this project combines request tracing with the ideas of tainting from Information
+    Flow Control (IFC). Requests are automatically tainted with privacy metadata regrading the data they carry and are operating on, and service infrastructure automatically reject
+    requests that do not meet its operator defined policies.
+  </div>
+
   <!--Teaching-->
   <div class="subsubtitle">Teaching</div>
   <div class="text">
@@ -223,40 +237,6 @@
     </ul>
   </div>
 
-  <!--Research-->
-  <div class="subsubtitle">Research</div>
-  <div class="text">
-    I currently research in the UC Berkeley Network Systems laboratory. My work deal mainly with distributed systems, its optimization,
-    and providing system guarantees. My research is focused on practical solutions to real world problems in distributed systems. I've been involved
-    in research since I was a freshman in undergrad, and I have worked on all aspects of research as you would expect from a graduate student.
-    Most of my work is implemented in Go, Python, and Javascript, although I have additionally used C and Ruby.
-    Service level knowledge include Docker, Kubernetes, and AWS/GCP.
-  </div>
-  <div class="supersubtitle">Resource Allocation Optimization in Distributed Systems (AutoTune)</div>
-  <div class="text">
-    The AutoTune project aims to reduce the cost to deploy a distributed system by minimizing
-    resource allocation while improving performance. It automatically cuts down on overprovisioned
-    resources and alleviates underprovisioned ones, then packing the system into the minimum number of nodes required.
-    AutoTune is implemented in Python and uses microservice-resource stressing to determine under and over provisioned resources.
-    A pre-print paper for this project is available upon request.
-  </div>
-  <div class="supersubtitle">Security and Privacy Policies via Lineage Tracing</div>
-  <div class="text">
-    This ongoing project aims to build a system for globally deploying and
-    enforcing data based policies at the microservice level with-out intrusive application code level modifications. We hope
-    that it can be used by compliance experts with minimal software engineering experience to easily program complex
-    privacy and security policies into existing infrastructure.
-    This is accomplished by tracking pieces of data, called tuples, at the cluster level using data lineage and then blocking the
-    flow of data between microservices if it does not pass all the relevant policies. A very rough whitepaper is available upon request.
-  </div>
-  <div class="supersubtitle">Verified Triggers</div>
-  <div class="text">
-    Verified Triggers was an exploratory project to safely declare and enforce cluster wise policies in Kubernetes.
-    Operators running a distributed system can enforce properties (i.e. fault tolerance of a distributed database) by
-    specifying a set of event driven triggers that perform an action (i.e. move worker if more than 50% of workers on same machine)
-    when activated. When systems become complex, these triggers may have unintended and troublesome effects when used together, most notably
-    non-convergence or unbounded growth.
-  </div>
 </div>
 
 </body>
