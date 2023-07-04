@@ -45,11 +45,12 @@
 
   <!--LANDING-->
   <div class="title">Will Wang</div>
-  <div class="subtitle">I am <span id="jobtitle">an <span id="job" class="bold">engineer.</span></span></div>
+  <!-- <div class="subtitle">I am <span id="jobtitle">an <span id="job" class="bold">engineer.</span></span></div> -->
+  <div class="subtitle">software engineer @ stripe, inc.</div>  
   <div class="descript">
+    Banking Integrations @ Stripe <br>
     B.S & M.S Computer Science @ UC Berkeley. <br>
     Distributed and Operating Systems <br>
-    SWE @ Stripe <br>
   </div>
 
   <!--ABOUT-->
@@ -57,18 +58,18 @@
   <div class="row">
     <div class="col-7">
       <div class="text">
-        I'm Will, I graduated with a M.S. and B.S. in computer science from  <a href="https://eecs.berkeley.edu/" target="_blank" class="link">UC Berkeley</a>.
-        I'm a Kubernetes fanatic and am interested in building distributed systems and infrastructure. I am currently working on
-        Banking Integration at <a href="https://stripe.com" target="_blank" class="link">Stripe</a>. In my free time
-        I hack around on Kubernetes and Envoy. Previously I interned on the Kubernetes Storage team at Google working
+        I'm Will, I work at <a href="https://stripe.com/" target="_blank" class="link">Stripe</a> on the Banking Integrations team. I've worked on a number of large projects at Stripe, including a new service for scheduling millions of daily payouts, a platform for managing our complex bank integrations, as well as building real time API and batch style integrations.
+        <br><br>
+        I graduated from <a href="https://eecs.berkeley.edu/" target="_blank" class="link">UC Berkeley</a> with a M.S. and B.S. in computer science. My research
+        was focused on distributed systems and container orchestration, which has remained my interest and passion. Previously I interned on the Kubernetes Storage team at Google working
         on the <a href="https://github.com/kubernetes-sigs/gcp-compute-persistent-disk-csi-driver" target="_blank" class="link">CSI PD Diver</a>
         and scaling storage to 5000+ nodes.<br><br>
         I was advised by Prof. <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html" target="_blank" class="link">Scott Shenker</a>
         and was part of <a href="https://netsys.cs.berkeley.edu/" target="_blank" class="link">NetSys</a> lab. My research focus was
         automated resource allocation optimization in distributed systems and infrastructure level data privacy policy enforcement.
-        I've taught the Operating Systems, Networking, and Data Structures classes in various GSI positions.
-
-        Aside from school, I develop for the non-profit site <a href="https://berkeleytime.com" target="_blank" class="link">berkeleytime.com</a>.
+        As a Graduate Student Instructor, I've taught the Operating Systems, Networking, and Data Structures classes at UC Berkeley.
+        <br><br>
+        I was also the lead developer for the non-profit site <a href="https://berkeleytime.com" target="_blank" class="link">berkeleytime.com</a>.
         <br><br>
         Check out out my
         <a href="https://github.com/hantaowang" class="link" target="_blank">GitHub</a>,
@@ -88,13 +89,14 @@
   metadata:
     name: Will Wang
   spec:
-    education:
-     - M.S. Computer Science @ Berkeley (2020)
-     - B.S. Electrical Engineering & Computer Science @ Berkeley (2019)
     experience:
+     - SWE @ <a href="https://stripe.com" target="_blank">Stripe</a> (Banking Platform & Integrations)
      - SWE Intern @ <a href="https://cloud.google.com/kubernetes-engine/" target="_blank">Google</a> (Kubernetes Storage, GKE)
      - Product Manager, Backend Engineering Lead @ <a href="https://berkeleytime.com" target="_blank">berkeleytime.com</a>.
      - SWE Intern @ <a href="https://kelda.io" target="_blank">Kelda</a> (Kubernetes)
+    education:
+     - M.S. Computer Science @ Berkeley (2020)
+     - B.S. Electrical Engineering & Computer Science @ Berkeley (2019)
     research:
       advisor: Prof. <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html" target="_blank">Scott Shenker</a>
       lab: <a href="https://netsys.cs.berkeley.edu/" target="_blank">Network Systems</a>
@@ -116,6 +118,20 @@
 
   <!--Experience-->
   <div class="subsubtitle">Experience</div>
+
+  <div class="row">
+    <div class="col-8">
+      <div class="supersubtitle">Stripe</div>
+      <div class="work-desc row">
+        <div class="col-6">Software Engineer</div>
+        <div class="col-6" style="text-align: right;">June 2020 - Now</div>
+      </div>
+      <div class="text" style="text-align: justify">
+        As an engineer at Stripe, I've lead the development of a number of key projects in the Banking Integrations and Banking Platform teams. My team is responsible for scheduling and executing the millions of bank transactions that Stripe processes every day. In laymen's terms, we schedule the transactions into submissions, while taking into consideration fund flows, routing, execution SLAs, volume restrictions, etc. The submissions are assembled into instructions and sent to various banking partners for execution, and then we process and interpret reporting from these partners to reconcile and update our internal state. This complex platform consists of some critical platform services, with more than a dozen integration services.
+      </div>
+    </div>
+    <div class="col-4"><img class="work-img" src="assets/images/stripe.png"></div>
+  </div>
 
   <div class="row">
     <div class="col-8">
@@ -152,7 +168,7 @@
       <div class="supersubtitle">Berkeleytime</div>
       <div class="work-desc row">
         <div class="col-6">Backend Engineering Lead</div>
-        <div class="col-6" style="text-align: right">September 2017 - Present</div>
+        <div class="col-6" style="text-align: right">September 2017 - June 2020</div>
       </div>
       <div class="text" style="text-align: justify">
         Berkeleytime is UC Berkeley's most popular course catalog, with over 26,000 unique monthly users. I led and developed on major initiatives to
